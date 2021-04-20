@@ -18,7 +18,7 @@ Operation System: {{os}}
 
 ## Steps
 
-1. Go to https://cloud.redhat.com/beta/application-services/streams/resources using {{os}}
+1. Go to https://cloud.redhat.com/beta/application-services/streams/resources
 
 2. Select and follow the **Using Quarkus applications with Kafka instances in Red Hat OpenShift Streams for Apache Kafka** Quickstart
 
