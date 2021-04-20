@@ -3,7 +3,6 @@ variants:
   - os: MacOS
   - os: Linux
   - os: Windows
-estimate: 30m
 ---
 
 # Q04 - [{{os}}] Using Kafka bin scripts Quickstart

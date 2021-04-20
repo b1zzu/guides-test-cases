@@ -3,7 +3,6 @@ variants:
   - os: MacOS
   - os: Linux
   - os: Windows
-estimate: 30m
 ---
 
 # Q03 - [{{os}}] Using Kafkacat with Kafka instances Quickstart

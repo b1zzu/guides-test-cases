@@ -3,7 +3,6 @@ variants:
   - os: MacOS
   - os: Linux
   - os: Windows
-estimate: 30m
 ---
 
 # Q02 - [{{os}}] Using Quarkus applications with Kafka instances Quickstart

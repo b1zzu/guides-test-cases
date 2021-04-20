@@ -4,7 +4,6 @@ variants:
   - browser: Chrome
   - browser: Safari
   - browser: Edge on Windows
-estimate: 30m
 ---
 
 # Q01 - [{{browser}}] Getting Started Quickstart
