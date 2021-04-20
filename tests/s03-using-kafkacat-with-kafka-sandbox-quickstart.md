@@ -4,6 +4,10 @@
 
 Test the **Using Kafkacat with Kafka instances in Red Hat OpenShift Streams for Apache Kafka** on OpenShift Sandbox
 
+## Prerequisites
+
+Follow the **Getting Started with Red Hat OpenShift Streams for Apache Kafka** to create the Kafka Instance, Service Account and Topic name (There is a test specific for the Getting Started, so you can go throgh this step as faster as you want)
+
 ## Steps
 
 1. Go to https://developers.redhat.com/developer-sandbox
@@ -17,6 +21,18 @@ Test the **Using Kafkacat with Kafka instances in Red Hat OpenShift Streams for 
 
 5. Select the Question Mark Icon on the Top Right corner and click on **Quick Starts**
 
-2. Select and follow the **TODO** Quickstart
+   **Attention**: The sandbox quickstart are not yet on the sendbox production clusters therfore in the
+   quickstart list you will not see this quickstart!
 
-   > You should TODO
+   We have prepared a cluster here with the quickstart installed for this reason:
+   https://console-openshift-console.apps.huayra.intlyqe.com/
+
+   use this cluster to follow the quickstart but execute the quickstart on the sandbox cluster.
+
+6. Select and follow the **Using Kafkacat with Kafka instances in Red Hat OpenShift Streams for Apache Kafka** Quickstart
+
+   > You should:
+   >
+   > - Start the tools Pod with kafkacat
+   > - Configure Kafkcat to connect to your Kafka Instance
+   > - Produce and consume messages using Kafkacat
