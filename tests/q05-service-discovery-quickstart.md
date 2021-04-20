@@ -8,6 +8,9 @@ Test the TODO Quickstart
 
 * OpenShift Cluster
 
+   You can use this OpenShit cluster which already have the RHOAS Operator installed: 
+   https://console-openshift-console.apps.huayra.intlyqe.com/ 
+
 ## Steps
 
 1. Go to https://cloud.redhat.com/beta/application-services/streams/resources
