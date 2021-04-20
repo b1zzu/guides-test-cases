@@ -67,7 +67,6 @@ function toIssue(
     return {
         fields: {
             assignee: null,
-            components: [{ name: "Testing" }],
             customfield_12311140: epicKey,
             customfield_12310940: sprint,
             description: markdown2confluence(content),
@@ -169,6 +168,7 @@ const jira: CommandModule<{}, Args> = {
                     `will create task: '${issue.fields.summary}' in project '${issue.fields.project.key}'`
                 );
             } else {
+                logger.info(`create issue: ${JSON.stringify(issue)}`)
                 const result = await jiraApi.addNewIssue(issue);
                 logger.info(
                     `created task '${result.key}' '${issue.fields.summary}'`

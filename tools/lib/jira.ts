@@ -23,19 +23,18 @@ interface Issue {
         versions?: { id: string; name?: string }[];
         fixVersions?: { id: string; name?: string }[];
         customfield_12312442?: { id: string; value?: string }; // fixBuild
-        customfield_12311140: string; // epic key
+        customfield_12311140?: string; // epic key
         customfield_12313240?: string; // team
         customfield_12310940?: string[] | number; // sprint: type 'string[]' when listing, type 'number' when creating a new jira
         description: string;
         issuetype: { name: IssueTypeName };
-        labels: string[];
+        labels?: string[];
         project: { key: string };
         priority?: { name: string };
         issuelinks?: IssueLink[];
-        summary: string;
-        assignee: null | {};
+        summary?: string;
+        assignee?: null | {};
         resolution?: Resolution;
-        components: null | [{}];
     };
     [name: string]: any;
 }
