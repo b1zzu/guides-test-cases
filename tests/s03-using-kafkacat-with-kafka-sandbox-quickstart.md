@@ -21,8 +21,7 @@ Follow the **Getting Started with Red Hat OpenShift Streams for Apache Kafka** t
 
 5. Select the Question Mark Icon on the Top Right corner and click on **Quick Starts**
 
-   **Attention**: The sandbox quickstart are not yet on the sendbox production clusters therfore in the
-   quickstart list you will not see this quickstart!
+   **Attention**: The sandbox quickstarts are not yet on the sandbox production clusters therefore in the quickstart list you will not see this quickstart!
 
    We have prepared a cluster here with the quickstart installed for this reason:
    https://console-openshift-console.apps.huayra.intlyqe.com/
