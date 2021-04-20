@@ -4,8 +4,7 @@ import { flat, walk } from "./utils";
 
 const TEST_DIR = "./tests";
 const TEST_FILTER = /^.*\.md$/;
-const REPO_URL =
-    "https://github.com/b1zzu/app-services-guides/tree/test-cases/test-cases";
+const REPO_URL = "https://github.com/b1zzu/guides-test-cases";
 
 interface Metadata {
     automation: string[];

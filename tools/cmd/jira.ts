@@ -9,7 +9,7 @@ import { loadTestRuns, TestRun } from "../lib/test-run";
 import { logger } from "../lib/winston";
 
 const GENERAL_GUIDELINES_URL =
-    "https://github.com/integr8ly/integreatly-operator/tree/master/test-cases/common/general-guidelines.md";
+    "https://github.com/b1zzu/guides-test-cases/blob/master/common/general-guidelines.md";
 
 function appendLinkToGeneralGuidelines(content: string): string {
     const guidelines = `## General guidelines for testing\n${GENERAL_GUIDELINES_URL}`;
