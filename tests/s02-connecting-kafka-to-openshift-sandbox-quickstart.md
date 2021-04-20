@@ -4,6 +4,10 @@
 
 Test the Connecting Red Hat OpenShift Streams for Apache Kafka to OpenShift Quickstart on OpenShift Sandbox
 
+## Prerequisites
+
+Follow the **Getting Started with Red Hat OpenShift Streams for Apache Kafka** to create the Kafka Instance, Service Account and Topic name (There is a test specific for the Getting Started, so you can go through this step as faster as you want)
+
 ## Steps
 
 1. Go to https://developers.redhat.com/developer-sandbox

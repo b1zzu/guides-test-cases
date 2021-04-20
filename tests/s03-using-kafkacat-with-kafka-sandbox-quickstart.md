@@ -6,7 +6,7 @@ Test the **Using Kafkacat with Kafka instances in Red Hat OpenShift Streams for 
 
 ## Prerequisites
 
-Follow the **Getting Started with Red Hat OpenShift Streams for Apache Kafka** to create the Kafka Instance, Service Account and Topic name (There is a test specific for the Getting Started, so you can go throgh this step as faster as you want)
+Follow the **Getting Started with Red Hat OpenShift Streams for Apache Kafka** to create the Kafka Instance, Service Account and Topic name (There is a test specific for the Getting Started, so you can go through this step as faster as you want)
 
 ## Steps
 
