@@ -1,3 +1,8 @@
+---
+tags:
+  - sandbox
+---
+
 # S03 - Using Kafkacat with Kafka Sandbox Quickstart
 
 ## Description

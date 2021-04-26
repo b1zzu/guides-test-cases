@@ -1,3 +1,8 @@
+---
+tags:
+  - sandbox
+---
+
 # S02 - Connecting Kafka to OpenShift Sandbox Quickstart
 
 ## Description

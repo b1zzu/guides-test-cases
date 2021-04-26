@@ -1,3 +1,8 @@
+---
+tags:
+  - sandbox
+---
+
 # S04 - Binding your Quarkus application to Kafka Sandbox Quickstart
 
 ## Description

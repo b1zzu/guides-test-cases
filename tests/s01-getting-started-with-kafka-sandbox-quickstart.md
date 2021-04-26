@@ -1,3 +1,8 @@
+---
+tags:
+  - sandbox
+---
+
 # S01 - Getting Started with Kafka Sandbox Quickstart
 
 ## Description

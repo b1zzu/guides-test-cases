@@ -2,7 +2,9 @@ import * as markdown2confluence from "markdown2confluence-cws";
 import { CommandModule } from "yargs";
 import { assertEpic, Issue, Jira } from "../lib/jira";
 import {
+    filterTests,
     loadTestCases,
+    stringToFilter,
     TestCase,
 } from "../lib/test-case";
 import { loadTestRuns, TestRun } from "../lib/test-run";
@@ -91,8 +93,7 @@ interface Args {
     jiraPassword: string;
     epic: string;
     previousEpic?: string;
-    environment: string;
-    product: string;
+    filter?: string[];
     dryRun: boolean;
 }
 
@@ -122,6 +123,10 @@ const jira: CommandModule<{}, Args> = {
             describe: "link the new taks to a previous epic",
             type: "string",
         },
+        filter: {
+            describe: "filter test to create by most of the fields",
+            type: "array",
+        },
         "dry-run": {
             describe: "print test cases that will be create",
             type: "boolean",
@@ -150,7 +155,11 @@ const jira: CommandModule<{}, Args> = {
 
         const project = epic.fields.project.key;
 
-        const tests = loadTestCases();
+        let tests = loadTestCases();
+
+        if (args.filter !== undefined) {
+            tests = filterTests(tests, stringToFilter(args.filter));
+        }
 
         for (const test of tests) {
             const previousRun = previousRuns.find((run) => run.id === test.id);
@@ -168,7 +177,6 @@ const jira: CommandModule<{}, Args> = {
                     `will create task: '${issue.fields.summary}' in project '${issue.fields.project.key}'`
                 );
             } else {
-                logger.info(`create issue: ${JSON.stringify(issue)}`)
                 const result = await jiraApi.addNewIssue(issue);
                 logger.info(
                     `created task '${result.key}' '${issue.fields.summary}'`
